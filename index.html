@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Humahuaca — Turismo oficial</title>
+  <meta name="description" content="Humahuaca, corazón de la Quebrada. Guía de qué hacer, eventos, gastronomía y cómo planificar tu visita." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="stile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="topbar container">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="logo" aria-hidden="true">H</div>
+        <div class="brand">
+          <div style="line-height:1">
+            <div style="font-weight:800">Humahuaca</div>
+            <div class="small muted">Turismo oficial</div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="desktop" aria-label="Navegación principal">
+        <a href="#que-hacer">Qué hacer</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#gastronomia">Gastronomía</a>
+        <a href="#planifica">Planificá</a>
+        <a href="#info">Info útil</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="search" role="search">
+          <input id="searchInput" type="search" placeholder="Buscar: Hornocal, peñas, alojamiento…" aria-label="Buscar" />
+        </div>
+        <a href="#planifica" class="cta">Planificá tu viaje</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay container">
+        <div class="hero__card" role="region" aria-label="Presentación de Humahuaca">
+          <h1 id="hero-title">Humahuaca, corazón de la Quebrada</h1>
+          <p>Historia ancestral, paisajes de altura y tradiciones vivas. Descubrí rutas, sabores y la cultura andina.</p>
+          <div class="actions">
+            <a class="btn-outline" href="#que-hacer">Explorar</a>
+            <a class="cta" href="#planifica">Planificar viaje</a>
+            <a class="small muted" href="#eventos">Ver eventos y festividades</a>
+          </div>
+        </div>
+
+        <!-- Quick facts -->
+        <div style="min-width:240px;align-self:stretch;display:flex;flex-direction:column;gap:12px">
+          <div class="card" style="padding:14px;display:flex;flex-direction:column;justify-content:center;gap:8px">
+            <div style="display:flex;align-items:center;gap:10px">
+              <div style="width:46px;height:46px;border-radius:10px;background:#f1f5f9;display:flex;align-items:center;justify-content:center">🏔️</div>
+              <div>
+                <div style="font-weight:700">Altitud</div>
+                <div class="small muted">~2.940 msnm (ciudad)</div>
+              </div>
+            </div>
+            <div class="tags" aria-hidden="true" style="margin-top:10px">
+              <span class="chip">Naturaleza</span>
+              <span class="chip">Cultura</span>
+              <span class="chip">Gastronomía</span>
+            </div>
+          </div>
+
+          <div class="card" style="padding:14px">
+            <div style="display:flex;align-items:center;gap:10px">
+              <div style="width:46px;height:46px;border-radius:10px;background:#fff7ed;display:flex;align-items:center;justify-content:center">📅</div>
+              <div>
+                <div style="font-weight:700">Próximo evento</div>
+                <div class="small muted">Carnaval de la Quebrada — Feb/Mar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qué hacer -->
+    <section id="que-hacer" class="container" aria-labelledby="q-title">
+      <div class="section-title">
+        <div>
+          <h2 id="q-title">Qué hacer</h2>
+          <p class="small muted">Planes imperdibles en tu visita</p>
+        </div>
+        <div><a class="small muted" href="#planifica">Ver todo →</a></div>
+      </div>
+
+      <div class="grid cols-3" style="margin-top:18px">
+        <article class="card" aria-labelledby="d1">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?q=80&w=1600&auto=format&fit=crop')"></div>
+          <div class="body">
+            <div class="pill">Naturaleza</div>
+            <h3 id="d1" style="margin:10px 0 6px">Serranías del Hornocal (14 Colores)</h3>
+            <p class="small muted">Mirador a ~4.350 msnm con vistas espectaculares. Mejor al atardecer.</p>
+            <div style="margin-top:12px"><a class="small" href="#planifica">Más info →</a></div>
+          </div>
+        </article>
+
+        <article class="card" aria-labelledby="d2">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1558981359-219d6364c9ac?q=80&w=1600&auto=format&fit=crop')"></div>
+          <div class="body">
+            <div class="pill">Patrimonio</div>
+            <h3 id="d2" style="margin:10px 0 6px">Casco histórico y Monumentos</h3>
+            <p class="small muted">Recorré la plaza, la iglesia y las escalinatas con su historia local.</p>
+            <div style="margin-top:12px"><a class="small" href="#planifica">Más info →</a></div>
+          </div>
+        </article>
+
+        <article class="card" aria-labelledby="d3">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1600&auto=format&fit=crop')"></div>
+          <div class="body">
+            <div class="pill">Cultura</div>
+            <h3 id="d3" style="margin:10px 0 6px">Peñas y música andina</h3>
+            <p class="small muted">Noches con charango, quena y danzas tradicionales.</p>
+            <div style="margin-top:12px"><a class="small" href="#eventos">Ver eventos →</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+        <span class="chip">Senderismo</span>
+        <span class="chip">Gastronomía</span>
+        <span class="chip">Mercados artesanales</span>
+        <span class="chip">Rutas escénicas</span>
+      </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos" style="background:linear-gradient(180deg,#f8fafc 0%, #fff 100%);">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <h2>Eventos y festividades</h2>
+            <p class="small muted">Agenda cultural del municipio</p>
+          </div>
+          <div><a class="small muted" href="#planifica">Calendario completo →</a></div>
+        </div>
+
+        <div class="grid cols-3" style="margin-top:18px">
+          <div class="card" style="padding:18px">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <h3 style="margin:0">Enero Humahuaqueño</h3>
+                <div class="small muted">Enero</div>
+              </div>
+              <div class="pill">Cultura</div>
+            </div>
+            <p class="small muted" style="margin-top:12px">Música, peñas y actividades en distintos puntos del municipio.</p>
+            <div style="margin-top:12px"><a class="small" href="#planifica">Ver detalles →</a></div>
+          </div>
+
+          <div class="card" style="padding:18px">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <h3 style="margin:0">Carnaval de la Quebrada</h3>
+                <div class="small muted">Febrero / Marzo</div>
+              </div>
+              <div class="pill">Tradición</div>
+            </div>
+            <p class="small muted" style="margin-top:12px">Comparsas, desfiles y el famoso “desentierro del diablo”.</p>
+            <div style="margin-top:12px"><a class="small" href="#planifica">Ver detalles →</a></div>
+          </div>
+
+          <div class="card" style="padding:18px">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <h3 style="margin:0">Semana Santa</h3>
+                <div class="small muted">Marzo / Abril</div>
+              </div>
+              <div class="pill">Religioso</div>
+            </div>
+            <p class="small muted" style="margin-top:12px">Procesiones y celebraciones con fuerte arraigo local.</p>
+            <div style="margin-top:12px"><a class="small" href="#planifica">Ver detalles →</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gastronomía -->
+    <section id="gastronomia" class="container">
+      <div class="section-title">
+        <div>
+          <h2>Sabores de Humahuaca</h2>
+          <p class="small muted">Platos típicos y productos regionales</p>
+        </div>
+        <div><a class="small muted" href="#planifica">Ver restaurantes →</a></div>
+      </div>
+
+      <div class="grid cols-3" style="margin-top:18px">
+        <div class="card">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop')"></div>
+          <div class="body">
+            <h3>Humita, tamales y locro</h3>
+            <p class="small muted">Cocina de raíz andina con maíz, papa y quinoa.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1546549039-49eae19d1c1e?q=80&w=1600&auto=format&fit=crop')"></div>
+          <div class="body">
+            <h3>Ferias y mercados</h3>
+            <p class="small muted">Artesanías textiles, quesos y dulces regionales.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1600&auto=format&fit=crop')"></div>
+          <div class="body">
+            <h3>Bebidas e infusiones</h3>
+            <p class="small muted">Té de altura, bebidas tradicionales y vinos regionales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planificá tu viaje + mapa -->
+    <section id="planifica" style="background:linear-gradient(180deg,#fff 0%, #f1f8fd 100%);padding-top:40px;padding-bottom:40px">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <h2>Planificá tu viaje</h2>
+            <p class="small muted">Todo lo que necesitás para organizar la visita</p>
+          </div>
+          <div><a class="small muted" href="#info">Centro de información →</a></div>
+        </div>
+
+        <div class="grid cols-3" style="margin-top:18px">
+          <div class="card" style="padding:18px">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="width:44px;height:44px;border-radius:10px;background:#e0f2fe;display:flex;align-items:center;justify-content:center">🚌</div>
+              <div>
+                <h3 style="margin:0">Cómo llegar</h3>
+                <div class="small muted">Rutas RN9/RP73. Buses desde San Salvador de Jujuy y Tilcara.</div>
+              </div>
+            </div>
+            <div style="margin-top:12px"><a class="small" href="#mapa">Ver mapa →</a></div>
+          </div>
+
+          <div class="card" style="padding:18px">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="width:44px;height:44px;border-radius:10px;background:#fff7ed;display:flex;align-items:center;justify-content:center">🏨</div>
+              <div>
+                <h3 style="margin:0">Dónde alojarse</h3>
+                <div class="small muted">Posadas, hostels y hoteles boutique en el casco histórico.</div>
+              </div>
+            </div>
+            <div style="margin-top:12px"><a class="small" href="#info">Reservar →</a></div>
+          </div>
+
+          <div class="card" style="padding:18px">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="width:44px;height:44px;border-radius:10px;background:#ecfdf5;display:flex;align-items:center;justify-content:center">🍽️</div>
+              <div>
+                <h3 style="margin:0">Dónde comer</h3>
+                <div class="small muted">Humita, tamales, empanadas de quinua y más sabores andinos.</div>
+              </div>
+            </div>
+            <div style="margin-top:12px"><a class="small" href="#gastronomia">Recomendados →</a></div>
+          </div>
+        </div>
+
+        <div style="margin-top:20px" class="map-card card" id="mapa">
+          <div style="padding:16px;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h3 style="margin:0">Mapa del municipio</h3>
+              <p class="small muted" style="margin:6px 0 0">Puntos de interés y oficinas de turismo.</p>
+            </div>
+            <div><a class="small muted" href="https://www.openstreetmap.org" target="_blank" rel="noopener">Abrir en OpenStreetMap →</a></div>
+          </div>
+          <iframe
+            title="Mapa Humahuaca"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-65.367%2C-23.22%2C-65.29%2C-23.17&layer=mapnik"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info útil -->
+    <section id="info" class="container" aria-labelledby="info-title">
+      <div class="section-title">
+        <div>
+          <h2 id="info-title">Información útil</h2>
+          <p class="small muted">Consejos para tu visita</p>
+        </div>
+        <div><a class="small muted" href="#planifica">Contacto →</a></div>
+      </div>
+
+      <div class="info-grid" style="margin-top:18px">
+        <div class="card" style="padding:18px">
+          <h3 style="margin-top:0">Clima y altitud</h3>
+          <ul style="margin:12px 0 0;padding-left:18px;color:var(--muted)">
+            <li>Clima seco y soleado la mayor parte del año.</li>
+            <li>Gran amplitud térmica: llevá capas de abrigo.</li>
+            <li>Hidratación y aclimatación: la ciudad está ~2.940 msnm.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding:18px">
+          <h3 style="margin-top:0">Contacto</h3>
+          <ul style="margin:12px 0 0;color:var(--muted);padding-left:18px;line-height:1.6">
+            <li>📞 +54 (388) 000-000</li>
+            <li>✉️ turismo@humahuaca.gob.ar</li>
+            <li>📍 Oficina de Turismo — Plaza Principal</li>
+            <li>Instagram: @turismohumahuaca</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top:16px" class="card" style="padding:16px">
+        <div style="padding:18px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(90deg,var(--accent),var(--accent-dark));border-radius:12px;color:white">
+          <div>
+            <h3 style="margin:0">Boletín de novedades</h3>
+            <p class="small" style="margin:6px 0 0;opacity:0.95">Recibí eventos, nuevas rutas y actividades.</p>
+          </div>
+          <form id="subscribeForm" class="subscribe" style="max-width:520px;width:100%;margin-left:auto">
+            <input id="email" type="email" placeholder="Tu email" required aria-label="Correo electrónico" />
+            <button type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <div class="logo" style="width:36px;height:36px;font-size:16px">H</div>
+            <div style="font-weight:700">Humahuaca</div>
+          </div>
+          <div class="small muted" style="margin-top:10px">Sitio turístico municipal. Inspirado en portales de destino con identidad local.</div>
+        </div>
+
+        <div>
+          <div style="font-weight:700;margin-bottom:8px">Explorar</div>
+          <ul style="list-style:none;padding:0;margin:0;color:var(--muted)">
+            <li><a href="#que-hacer">Qué hacer</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#gastronomia">Gastronomía</a></li>
+            <li><a href="#planifica">Planificá</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div style="font-weight:700;margin-bottom:8px">Servicios</div>
+          <ul style="list-style:none;padding:0;margin:0;color:var(--muted)">
+            <li>Oficinas de Turismo</li>
+            <li>Guías habilitados</li>
+            <li>Alojamientos</li>
+            <li>Transporte</li>
+          </ul>
+        </div>
+
+        <div>
+          <div style="font-weight:700;margin-bottom:8px">Redes</div>
+          <div class="socials" style="display:flex;align-items:center">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;color:var(--muted);font-size:13px">© <span id="year"></span> Municipio de Humahuaca. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script>
+    // small helpers: year, search mock, subscribe mock
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Search: simple scroll-to-first matching section title
+    document.getElementById('searchInput').addEventListener('keypress', function(e){
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        const q = this.value.trim().toLowerCase();
+        if(!q) return;
+        const sections = document.querySelectorAll('main section, main article, main h3, main h2');
+        let found = null;
+        sections.forEach(s=>{
+          if(!found && s.innerText && s.innerText.toLowerCase().includes(q)){
+            found = s;
+          }
+        });
+        if(found){
+          found.scrollIntoView({behavior:'smooth', block:'center'});
+          found.style.transition='box-shadow 0.25s';
+          const old = found.style.boxShadow;
+          found.style.boxShadow = '0 6px 30px rgba(14,165,233,0.15)';
+          setTimeout(()=>found.style.boxShadow = old,1500);
+        } else {
+          alert('No se encontraron resultados para: ' + q);
+        }
+      }
+    });
+
+    // Subscribe mock
+    document.getElementById('subscribeForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      if(!email){ alert('Ingresá tu email'); return; }
+      // Simulamos envío
+      alert('¡Gracias! ' + email + ' ha sido suscripto al boletín.');
+      this.reset();
+    });
+
+    // Improve keyboard accessibility for "Ver todo" links: smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const href = this.getAttribute('href');
+        if(href.length > 1){
+          const target = document.querySelector(href);
+          if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
